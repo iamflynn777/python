@@ -1,0 +1,47 @@
+I am a newbie in python. I am stuck by finding the length of a path in 2d. I have no idea what I'm doing wrong. Please help!
+
+import math
+vector1 = v1
+vector2 = v2
+def length (v):
+
+    """ Length of a vector in 2-space.
+
+    Params: v (2-tuple) vector in 2-space
+    Returns: (float) length
+    """
+    v = sqrt(v1**2 + v2**2)
+    return v
+
+
+
+def dist (P,Q):
+
+    """ Distance in 2-space.
+
+    Params: 
+        P (2-tuple): a point in 2-space
+        Q (2-tuple): another point in 2-space
+    Returns: (float) dist (P,Q)
+    """
+    dist = [(Q - P) **2]
+    dist = math.sqrt(sum(dist))
+    return dist
+
+
+P = [p0, p1]
+Q = [q0, q1]
+def pathLength2d (pt):
+
+    """Length of a 2-dimensional path.
+
+    Standard length as measured by a ruler.
+
+    Params: pt (list of 2-tuples): path in 2-space
+
+    Returns: (float) length of this path
+    """
+    pt = math.hypot(q0 - p0, q1 -p1)
+    return pt
+
+print (pathLength2d ([(0,0), (1,1)]))
