@@ -1,0 +1,2 @@
+# python
+euclidean distance 
